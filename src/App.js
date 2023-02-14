@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import RewardPoints from "../src/RewardPoints";
 
