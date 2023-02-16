@@ -6,6 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Assumptions
+
+1. Assumming only any 3 consecutive months of data.
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
