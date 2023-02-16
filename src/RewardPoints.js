@@ -13,16 +13,16 @@ function RewardPoints() {
     amount: 0,
   });
 
-  const calRew = (price) => {
-    let rewards = 0;
-    if (price > 100) {
-      rewards = (price - 100) * 2;
-    }
-    if (price > 50) {
-      rewards = rewards + (price - 50);
-    }
-    return rewards;
-  };
+const calRew=(price) => {
+  let rewards = 0;
+  if (price > 100) {
+    rewards = (price - 100) * 2;
+  }
+  if (price > 50) {
+    rewards = rewards + (price - 50);
+  }
+  return rewards;
+}
 
   useEffect(() => {
     const fetchTransactions = async () => {
@@ -183,7 +183,7 @@ function RewardPoints() {
           )}
           <div>
             <h4>Add Transactions</h4>
-
+           
             <div className="input-fields">
               <label>Date : </label>
               <input
