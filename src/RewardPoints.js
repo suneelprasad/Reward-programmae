@@ -13,6 +13,17 @@ function RewardPoints() {
     amount: 0,
   });
 
+const calRew=(price) => {
+  let rewards = 0;
+  if (price > 100) {
+    rewards = (price - 100) * 2;
+  }
+  if (price > 50) {
+    rewards = rewards + (price - 50);
+  }
+  return rewards;
+}
+
   useEffect(() => {
     const fetchTransactions = async () => {
       setloadedData({ ...data });
@@ -172,9 +183,7 @@ function RewardPoints() {
           )}
           <div>
             <h4>Add Transactions</h4>
-            <h5>
-              Only Transactions between 14/11/2022 and 14/02/2023 will be added
-            </h5>
+           
             <div className="input-fields">
               <label>Date : </label>
               <input
@@ -204,14 +213,3 @@ function RewardPoints() {
 }
 
 export default RewardPoints;
-
-function calRew(price) {
-  let rewards = 0;
-  if (price > 100) {
-    rewards = (price - 100) * 2;
-  }
-  if (price > 50) {
-    rewards = rewards + (price - 50);
-  }
-  return rewards;
-}
