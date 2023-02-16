@@ -43,12 +43,12 @@ module.exports = {
   ],
   mani: [
     {
-      date:"2/14/2020",
-      amount: 143
+      date: "2/14/2020",
+      amount: 143,
     },
     {
-      date:"12/31/2022",
-      amount:1123
-    }
+      date: "12/31/2022",
+      amount: 1123,
+    },
   ],
 };
